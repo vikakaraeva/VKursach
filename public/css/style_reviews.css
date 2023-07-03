@@ -1,0 +1,191 @@
+/* CSS для формы */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFAFA;
+  color: #555;
+  font-family: "Arsenal", sans-serif;
+}
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+}
+
+.ost1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 26px;
+  color: #8D3123;
+  padding: 3px 0 5px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ost {
+  margin: 0;
+  padding: 3px 0 5px 0;
+  color: #8D3123;
+  font-size: 17px;
+  text-align: center;
+}
+
+.ost2 {
+  padding: 0px 0 5px 0;
+  color: #8D3123;
+  font-size: 20px;
+  text-align: center;
+}
+
+hr {
+  color: black;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 1% 0 0 5px;
+}
+
+.reviews {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  text-align: left;
+  width: 47%;
+  padding: 1% 0 0 15px;
+  border-radius: 5px;
+}
+
+.reviews .review_text {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 1%;
+  border-radius: 5px;
+  width: 100%;
+  padding-top: 2%;
+  bottom: 2%;
+  padding-left: 2%;
+  font-size: 16px;
+  font-family: "Arsenal", sans-serif;
+}
+
+.send {
+  margin-bottom: 4%;
+  font-family: "Arsenal", sans-serif;
+  text-align: center;
+}
+
+.send input[type="text"],
+input[type="email"],
+textarea {
+  border: solid 1px #000000;
+  margin-bottom: 2%;
+  font-family: "Arsenal", sans-serif;
+}
+
+.send input[type="text"],
+[type="email"] {
+  width: 38%;
+  color: #5d5d5d;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.send textarea {
+  width: 77%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.send input[type="submit"] {
+  background-color: #fc9a54;
+  padding: 2%;
+  color: black;
+  border-radius: 5px;
+  font-family: "Arsenal", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* CSS для рейтинга (звезды) */
+.rating {
+width: 63%;
+}
+
+.rating:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked)>label {
+  float: right;
+  width: 1em;
+  padding: 0 .1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 140%;
+  line-height: 1.2;
+  color: #ddd;
+  text-shadow: 1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0, 0, 0, .5);
+}
+
+.rating:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rating>input:checked~label {
+  color: #f70;
+  text-shadow: 1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0, 0, 0, .5);
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0, 0, 0, .5);
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+  color: #ea0;
+  text-shadow: 1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0, 0, 0, .5);
+}
+
+.rating>label:active {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea::placeholder {
+  color: #999;
+}

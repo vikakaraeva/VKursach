@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body{
+background-color: #FFFAFA;
+font-family: 'Roboto', sans-serif;
+padding: 3px 10px;
+}
+
+/* отступы в меню */
+a {
+	margin: 30px;
+	text-decoration: none;
+	color: #632718;
+	text-align: center;
+}
+
+
+
+/* кнопки */
+.knopki {
+		display: flex;
+		margin-left: 200px;
+		margin-bottom: 2px;
+}
+.kn{
+	margin-top: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.kn2 {
+	margin-left: 600px;
+  margin-top: 13px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+hr {
+	border: none;
+	background: #CC5404;
+	height: 2px;
+	margin-top: -10px;
+	top: 20px;
+}
+
+.hr {
+	border: none;
+	background: #CC5404;
+	height: 2px;
+	margin-top: 6px;
+	top: 20px;
+}
+
+.knop2{
+	display: flex;
+	margin-top: -6px;
+	margin-left: 405px;
+	margin-bottom: 0.5px;
+}
+
+
+
+.for {
+	position: relative;
+	width: 200px;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.but,
+.but1 {
+	border: none;
+	outline: none;
+}
+
+.but {
+	margin-bottom: 5px;
+	margin-top: 1px;
+	width: 100%;
+	height: 40px;
+	padding-left: 15px;
+	border: 2px solid #CC5404;
+	border-radius: 10px;
+}
+
+.but1 {
+	height: 26px;
+	width: 52px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	background: #bd082a;
+	cursor: pointer;
+  background: url(../img/poisk.svg) no-repeat top right;
+}
+
+/* надпись yummy-cake */
+.text {
+	font-family: 'Alex Brush', cursive;
+	font-size: 96px;
+	text-align: center;
+	color:#632718;
+}
+
+.menu {
+  text-align: center;
+	font-family: "Arsenal";
+	color: #632718;
+}
+
+ a:hover {
+	color: #D65027;
+ }
+
+/* слайдер*/
+ul {
+	list-style-type: none;
+}
+
+img {
+	object-fit: cover;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+	font-size: 12px;
+	display: flex;
+}
+
+.card {
+	padding: 30px;
+	background-color: #FFFAFA;
+	min-height: 300px;
+	color: #111;
+	font-size: 10px;
+}
+
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	margin: 0 15px;
+	background-color: #FFFAFA;
+	opacity: 2;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: rgb(0, 0, 0);
+	position: relative;
+}
+
+.gg{
+	margin-left: 42%;
+}
+
+.swiper-container {
+	padding-bottom: 40px;
+	clear: right;
+	margin-right: center;
+}
+
+.slider-container {
+	padding: 0 20px;
+	position: relative;
+	margin: 5 auto;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev {
+	background-image: url("../img/back.svg");
+}
+
+.swiper-button-next {
+	background-image: url("../img/right.svg");
+}
+
+.slider-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 30px;
+	margin: auto;
+}
+
+.slider-buttons {
+	display: flex;
+	align-items: center;
+}
+
+/* о нас*/
+p {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 20px;
+	margin-left: 200px;
+	color: #373636;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.block2 {
+	font-family: 'Arsenal', sans-serif;
+	display: inline-block;
+	margin-left: 110px;
+	border: 2px solid #CC5404;
+	padding: 15px;
+	font-size: 20px;
+	background:rgb(255, 201, 162);
+}
+ .unik {
+  color: #632718;
+	margin-bottom: 15px;
+ }
+
+
+/* наш адрес*/
+h2{
+	font-family: 'Arsenal', sans-serif;
+	font-size: 24px;
+	margin-left: 200px;
+	margin-bottom: 25px; 
+	margin-top: 13px;
+	color: #632718;
+}
+
+.log {
+	display: flex;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+
+.log1 {
+	font-family: 'Arsenal', sans-serif;
+	height: 50px;
+	margin-left: 330px;
+}
+ 
+.log2{
+	font-family: 'Arsenal', sans-serif;
+	font-size: 24px;
+	height: 50px;
+	margin-left: 40px;
+}
+
+.log3{
+	font-family: 'Arsenal', sans-serif;
+	font-size: 21px;
+	color: #632718;
+	display: inline-block;
+	box-sizing: border-box;
+	outline: none;
+	height: 47px;
+	font-weight: 600;
+	width: 200px;
+	white-space:nowrap;
+	margin-left: 300px;
+	border-radius: 10px;	
+	border: 2px solid #D65027;
+	background: rgb(251, 124, 28, 0.7);
+}
+
+.log3:hover{
+	color: #D65027;
+}
+
+
+.log4 {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 20px;
+	color: #632718;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0 25px;
+	outline: none;
+	height: 40px;
+	font-weight: 600;
+	border-radius: 10px;
+	border: 2px solid #D65027;
+	background: rgb(251, 124, 28, 0.7);
+	margin-top: 10px;
+}
+
+.log4:hover {
+	color: #D65027;
+}
+
+.log5 {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 18px;
+	color: #632718;
+	margin-left: 30%;
+	display: inline-block;
+	padding: 0 25px;
+	height: 37px;
+	font-weight: 600;
+	border-radius: 10px;
+	border: 2px solid #D65027;
+	background: rgb(251, 124, 28, 0.7);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.log5:hover {
+	color: #D65027;
+}
+.log6 {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 18px;
+	color: #632718;
+	margin-left: 25%;
+	display: inline-block;
+	padding: 0 25px;
+	height: 37px;
+	font-weight: 600;
+	border-radius: 10px;
+	border: 2px solid #D65027;
+	background: rgb(251, 124, 28, 0.7);
+	margin-top: 10px;
+}
+
+.log6:hover {
+	color: #D65027;
+}
+
+.log7 {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 18px;
+	color: #632718;
+	margin-left: 33%;
+	display: inline-block;
+	padding: 0 25px;
+	height: 37px;
+	font-weight: 600;
+	border-radius: 10px;
+	border: 2px solid #D65027;
+	background: rgb(251, 124, 28, 0.7);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.log7:hover {
+	color: #D65027;
+}
+
+/* рекомендации для пробы*/
+h3{
+	margin-bottom: 10px;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 24px;
+	color: #632718;
+	text-align: center;
+}
+
+/* картинки в ряд */
+.row {
+	float: left;
+	height: 100%;
+  width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	
+}
+.column{
+	float: center;
+	margin-right: 20px; /* Отступ справа */
+	margin-left: 20px ; /* Отступ слева */
+	margin-top: 20px; /* Отступ сверху */
+	margin-bottom: 15px; /* Отступ снизу */
+}
+
+/* подписи к картинкам*/
+figcaption{
+	font-family: 'Arsenal', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+ text-align: center;
+}
+
+
+/* индикатор прогрузки */
+.progress-container { /* Контейнер прогресса (серый фон) */
+	width: 100%;
+	height: 5px;
+	background: #f1f1f1;
+}
+
+/* Индикатор прогресса (индикатор прокрутки) */
+.progress-bar { 
+	height: 5px;
+	background: #f37e5a;
+	width: 0%;
+}
+
+.fix{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 400;
+}
+
+
+/* подвал сайта */
+footer {
+	font-family: 'Arsenal', sans-serif;
+	font-size: 20px;
+	position: relative; /*относительное позиционирование*/
+	padding: 7px 10px;
+	display: flex;
+	justify-content: center; /*в центре по горизонтали*/
+	align-items: center; /*в центре по вертикали*/
+	flex-direction: column;
+	margin-top: 30px; /*отступ сверху*/
+}
+
+.menuu {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.menuu li a {
+	font-size: 20px; /*размер ссылок меню*/
+	color: #632718; 	/*цвет ссылок меню*/
+	opacity: 0.8; 	/*значение прозрачности*/
+	margin: 0 15px;
+	text-decoration: none; /*ссылка без подчеркивания*/
+	display: inline-block;
+}
+
+.menuu li a:hover {
+	opacity: 2;
+}
+
+.pf {
+	color: rgb(0, 0, 0, 0.4);
+	font-size: 14px;
+}
+
+ /* скролл вверх */
+.go-top {
+	position: fixed;
+	left: 92%;
+	top: 20%;
+	transform: translateY(-50%);/* выравниваем по центру */
+	cursor: pointer;/* при наведении меняем курсор */
+	display: none;/* по умолчанию скрываем кнопку */
+	font-size: 20px;
+	color: #D65027;;
+	padding: 15px 10px;
+}
+
+/* меняем прозрачность при наведении мышкой */
+.go-top:hover {
+	color: #a53114;
+	background-color: rgba(255, 201, 162, 0.15);
+}
+
+/* модификатор для отображения кнопки */
+.go-top--show {
+	display: flex;
+}
+
+/* оформление заказа */
+ form {
+ 	max-width: 400px;
+ 	margin: 0 auto;
+ }
+
+ label {
+ 	display: block;
+ 	margin-bottom: 5px;
+ }
+
+ select,
+ input[type="pozh"] {
+ 	width: 100%;
+ 	padding: 8px;
+ 	margin-bottom: 10px;
+ 	border: 1px solid #ccc;
+ 	border-radius: 4px;
+ }
+ select,
+ input[type="kg"] {
+ 	width: 100%;
+ 	padding: 8px;
+ 	margin-bottom: 10px;
+ 	border: 1px solid #ccc;
+ 	border-radius: 4px;
+ }
+
+ .product-card {
+	margin-top: 20px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	background-color: #fff;
+ 	border-radius: 4px;
+ 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 	padding: 20px;
+ 	margin-bottom: 15px;
+ }
+
+ .product-image {
+	display: flex;
+ }
+
+ .product-details {
+ 	margin-top: 10px;
+ }
+
+ .product-title {
+ 	color: rgb(55, 55, 55);
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	margin-bottom: 5px;
+ }
+
+ .product-price {
+ 	font-size: 16px;
+ 	color: #606060;
+ 	text-align: center;
+ }
+
+ /* личный кабинет*/
+ .cont {
+ 	display: flex;
+ 	justify-content: space-between;
+	margin-left: 20px;
+ }
+
+ .user-info {
+ 	width: 50%;
+ 	padding: 20px;
+ }
+
+ .order-i {
+ 	width: 50%;
+ 	padding: 20px;
+ }
+
+ .greeting {
+ 	font-size: 20px;
+ 	margin-bottom: 10px;
+ 	color: #101010;
+ }
+
+ .headin {
+ 	font-size: 20px;
+ 	margin-bottom: 10px;
+ 	color: #101010;
+ }
+
+ .orders {
+ 	margin-bottom: 18px;
+ 	padding: 10px;
+ 	border: 1px solid #ccc;
+ 	background-color: #f9f9f9;
+ }
+
+ .order-number {
+ 	font-size: 18px;
+ 	color: #101010;
+ 	margin-bottom: 5px;
+ }
+
+ .order-date,
+ .order-wishes,
+ .order-delivery {
+ 	font-size: 15px;
+ 	color: #101010;
+ 	margin-bottom: 3px;
+ }
+
+ .info {
+ 	font-size: 16px;
+ 	color: #101010;
+ 	margin-bottom: 3px;
+ }
+
+ .knops{
+	margin-top: 30px;
+	margin-left: -30px;
+	font-size: 20px;
+	color:#CC5404;
+	font-size: 18px;
+ }
+
+ .knops2 {
+	margin-left: -154px;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: 'Arsenal', sans-serif;
+ }
+
+ 
+.add-button {
+	margin-left: -150px;
+	font-size: 16px;
+	cursor: pointer;
+	font-family: 'Arsenal', sans-serif;
+	
+}
+
+.add-button:hover {
+	color: #CC5404;
+}

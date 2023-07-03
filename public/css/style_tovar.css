@@ -1,0 +1,111 @@
+  @import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+  body {
+    font-family: "Arsenal";
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="text"],
+  input[type="file"],
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   
+    
+  }
+
+  input[type="submit"] {
+  font-family: 'Arsenal', sans-serif;
+    font-size: 18px;
+    background-color: #dd633d;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Arsenal', sans-serif;
+    margin-top: 5px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #D65027;;
+  }
+
+  select {
+    height: 40px;
+  }
+    .cont {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+    }
+  
+    .order-i {
+      width: 50%;
+      padding: 20px;
+    }
+  
+    .user-info {
+      margin-top: 35px;
+      width: 50%;
+      padding: 20px;
+    }
+  
+    .headin {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #101010;
+    }
+  
+    .orders {
+      margin-bottom: 18px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+  
+    .order-number {
+      font-size: 18px;
+      color: #101010;
+      margin-bottom: 5px;
+    }
+  
+    .order-date,
+    .order-wishes,
+    .order-delivery {
+      font-size: 15px;
+      color: #101010;
+      margin-bottom: 3px;
+    }
+  
+    .info {
+      font-size: 16px;
+      color: #101010;
+      margin-bottom: 3px;
+    }
+  
+    .add-button {
+      margin-left: -150px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: 'Arsenal', sans-serif;
+    }
+  
+    .add-button:hover {
+      color: #CC5404;
+    }

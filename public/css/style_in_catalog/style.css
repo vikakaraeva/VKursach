@@ -1,0 +1,275 @@
+@import url(../../header-footer.css);
+.main{
+    font-family: "Arsenal";
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #191919;
+  }
+h1{
+    font-size: 28px;
+    line-height: 1.1em;
+    margin-bottom: 15px;
+    font-weight: bolder;
+ }
+ h2, h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2px;
+ }
+ .ad{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+ }
+ .ad_catalog{
+    border-radius: 5px;
+    position: relative;
+    background-color: #FF9A8B;
+    
+    padding: 10px;
+ }
+ .ad_content{
+    position: relative;
+    border: solid 2px rgba(255, 255, 255, 0.464);
+    padding: 5px;
+    border-radius: 5px;
+ }
+ .hide_ad{
+    position: absolute;
+    right:10px;
+    top:10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+ }
+ .catalog_page_content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+ }
+
+ .catalog_navigation{
+   display: flex;
+   margin-left: 24%;
+   gap:20px;
+ }
+ .catalog_navigation>a{
+      text-decoration: none;
+      margin-right: 10px;
+      font-size: 24px;
+      transition: background-color 0.3s ease;
+ }
+
+ .pod{
+   margin-left: 20px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   font-size: 20px;
+   color:#632718;
+ }
+ 
+
+ .catalog_navigation>a:last-child {
+    margin-right: 0;
+ }
+ 
+ .catalog_item{
+    height: 100%;
+ }
+ .catalog_card{
+    height: 100%;
+    background-color: rgba(60, 60, 60, 0.126);
+    border-radius: 15px;
+    padding: 15px;
+ }
+ .catalog_card:hover{
+    box-shadow: 1px 1px 8px rgba(187, 187, 187, 0.126);
+ }
+ .card_picture{
+    width: 100%;
+    padding-top: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+ }
+
+ .cards_container img{
+    position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 100%;
+    transition: .4s;
+ }
+ .cards_container img:hover{
+    transform: scale(110%);
+ }
+ .card_details{
+    padding-top: 10px;
+ }
+ .cards_container .price{
+   display: flex;
+      gap: 10px;
+      align-items: center;
+      /* Добавляем выравнивание по вертикали */
+      margin-bottom: 5px;
+ }
+ .item_name{
+      white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         margin-bottom: 5px;
+ }
+ .cards_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    row-gap: 15px;
+    column-gap: 15px;
+ }
+
+ .card_buttons>button{
+    background-color: transparent;
+    color: white;
+ }
+ 
+ button.add_to_cart{
+   margin-right: 12px;
+   font-size: 14px;
+   background-color: #dd633d;
+   padding: 7px;
+   border-radius: 8px;
+   border: none;
+   color: #ffffff;
+   cursor: pointer;
+   font-family: 'Arsenal', sans-serif;
+ }
+ button.add_to_cart:hover{
+    background-color: #f37e5a;
+ }
+ button.add_to_cart:active{
+    background-color: #f37e5a;
+ }
+
+
+
+/* индикатор прогрузки */
+.progress-container {
+   width: 100%;
+   height: 5px;
+   background: #f1f1f1;
+}
+
+ /* Индикатор прогресса (индикатор прокрутки) */
+.progress-bar {
+   height: 5px;
+   background: #f37e5a;
+   width: 0%;
+}
+
+.fix {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: 400;
+}
+
+/* отступы в меню */
+a {
+   margin: 30px;
+   text-decoration: none;
+   color: #632718;
+}
+
+
+/* кнопки */
+.knopki {
+   display: flex;
+   margin-left: 200px;
+   margin-bottom: 2px;
+}
+
+.kn {
+   margin-top: 20px;
+   text-decoration: none;
+   display: inline-block;
+}
+
+.kn2 {
+   margin-left: 600px;
+   margin-top: 13px;
+   text-decoration: none;
+   display: inline-block;
+}
+
+.kn2 :hover {
+   color: #632718;
+}
+
+hr {
+   border: none;
+   background: #CC5404;
+   height: 2px;
+}
+
+
+/*поиск в меню*/
+.for {
+   position: relative;
+   width: 200px;
+   text-decoration: none;
+   margin-left: 20px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+
+.but,
+.but1 {
+   border: none;
+   outline: none;
+}
+
+.but {
+   margin-bottom: 5px;
+   margin-top: 1px;
+   width: 100%;
+   height: 40px;
+   padding-left: 15px;
+   border: 2px solid #CC5404;
+   border-radius: 10px;
+}
+
+.but1 {
+   height: 26px;
+   width: 52px;
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   background: #bd082a;
+   cursor: pointer;
+   background: url(../img/poisk.svg) no-repeat top right;
+}
+
+/* надпись yummy-cake */
+.text {
+   font-family: 'Alex Brush', cursive;
+   font-size: 96px;
+   text-align: center;
+   color: #632718;
+}
+
+.menu {
+   text-align: center;
+   font-family: "Arsenal";
+   color: #632718;
+}
+
+a:hover {
+   color: #D65027;
+}
